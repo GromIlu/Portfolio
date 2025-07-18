@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+/* Add this at the bottom of src/index.css or your global CSS */
+@keyframes floatRotate3D {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(15deg) rotateY(15deg) translateY(-10px);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateY(0);
+  }
+}
+
+.animate-float-grid > div {
+  animation: floatRotate3D 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 800px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
