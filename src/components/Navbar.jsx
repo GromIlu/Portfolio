@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // optional: use `react-icons` if you prefer
+import { Menu, X } from "lucide-react"; 
 
 
 export default function Navbar() {
@@ -8,14 +8,16 @@ export default function Navbar() {
 
   return (
     <nav className="bg-gray-900 text-teal-100 shadow-md">
-      <div className="container mx-auto flex justify-between items-center px-4 py-4">
-        
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-indigo-400 font-trademark font-style: italic">
-          Grom.Ilu Portfolio
+      <div className="container mx-auto flex justify-between items-center px-3 py-3">
+   
+        <Link to="/" className="flex items-center space-x-2">
+          <img src="/Glogo.png" alt="Logo" className="w-8 h-8" />
+          <span className="text-2xl font-bold text-indigo-400 font-trademark italic">
+            Grom.Ilu Portfolio
+          </span>
         </Link>
 
-        {/* Desktop Nav Links */}
+
         <div className="hidden md:flex space-x-6 text-lg">
           <Link to="/" className="hover:text-indigo-300 transition">Home</Link>
           <Link to="/about" className="hover:text-indigo-300 transition">About</Link>
@@ -24,7 +26,6 @@ export default function Navbar() {
           <Link to="/contact" className="hover:text-indigo-300 transition">Contact</Link>
         </div>
 
-        {/* Hamburger Toggle (Mobile) */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -32,7 +33,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+  
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 bg-gray-800 text-lg">
           <Link to="/" className="block hover:text-indigo-300" onClick={() => setIsOpen(false)}>Home</Link>

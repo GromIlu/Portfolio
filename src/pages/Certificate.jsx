@@ -73,7 +73,7 @@ export default function Certificate() {
                   flippedIndex === idx ? "rotate-y-180" : ""
                 }`}
               >
-                {/* Front Side */}
+          
                 <div className="absolute w-full h-full backface-hidden rounded-xl overflow-hidden shadow-lg group">
                   <img
                     src={cert.image}
@@ -82,7 +82,6 @@ export default function Certificate() {
                   />
                 </div>
 
-                {/* Back Side */}
                 <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-gray-800 text-white rounded-xl p-4 flex flex-col justify-center items-center shadow-lg">
                   <h3 className="text-xl font-semibold text-indigo-300 mb-2">{cert.title}</h3>
                   <p className="text-sm text-gray-400">{cert.issuer}</p>

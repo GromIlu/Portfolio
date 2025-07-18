@@ -9,12 +9,12 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_i4gjadk",     // ✅ replace with your actual service ID
-        "template_rjq2w4q",    // ✅ replace with your actual template ID
+        "service_i4gjadk",     
+        "template_rjq2w4q",  
         form.current,
-        "u8CwYbsrA_YdQqPon"      // ✅ replace with your actual public key
+        "u8CwYbsrA_YdQqPon"      
       )
-      // eslint-disable-next-line no-unused-vars
+    
       .then((result) => {
         alert("✅ Message sent successfully!");
         form.current.reset();

@@ -19,7 +19,6 @@ export default function Home() {
   return (
     <section className="min-h-screen bg-gray-950 text-white px-6 py-16 flex flex-col md:flex-row items-center justify-center gap-12">
       
-      {/* Left: Introduction */}
       <div className="text-left max-w-xl">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
           Hi, I'm <span className="text-indigo-400">Ilustre, Gerome L.</span>
@@ -35,7 +34,6 @@ I'm a BSIT student passionate about gaining knowledge and improving my skills in
 
       </div>
 
-      {/* Right: 3D Floating Logos */}
       <div className="grid grid-cols-3 gap-6 max-w-md w-full animate-float-grid perspective">
         {techLogos.map((logo, idx) => (
           <div

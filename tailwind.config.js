@@ -2,17 +2,17 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}", // Scan all files in /src
+    "./src/**/*.{js,jsx,ts,tsx}", 
   ],
   theme: {
     extend: {
        fontFamily: {
-        trademark: ['Active', 'Feeling'], // 'trademark' is your custom font name
+        trademark: ['Active', 'Feeling'],
       },
       colors: {
-        primary: '#4F46E5',  // Indigo-600
-        dark: '#0f172a',     // Slate-900
-        light: '#f1f5f9',    // Slate-100
+        primary: '#4F46E5', 
+        dark: '#0f172a',     
+        light: '#f1f5f9',    
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],

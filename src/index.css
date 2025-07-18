@@ -4,7 +4,6 @@
 
 @import "tailwindcss";
 
-/* Add this at the bottom of src/index.css or your global CSS */
 @keyframes floatRotate3D {
   0% {
     transform: rotateX(0deg) rotateY(0deg) translateY(0);
